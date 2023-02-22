@@ -1,0 +1,169 @@
+Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+
+==============================================================================
+
+Section Cross References
+
+    startup.o(RESET) refers to startup.o(STACK) for __initial_sp
+    startup.o(RESET) refers to startup.o(.text) for Reset_Handler
+    startup.o(.text) refers to startup.o(my_data2) for Sector_quantity_update
+    startup.o(.text) refers to startup.o(my_data1) for total_tickets
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing startup.o(HEAP), (0 bytes).
+
+1 unused section(s) (total 0 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      204  startup.o(RESET)
+    startup.s                                0x00000000   Number         0  startup.o ABSOLUTE
+    .text                                    0x000000cc   Section      372  startup.o(.text)
+    Sector_prices                            0x00000188   Data          40  startup.o(.text)
+    Sector_quantity                          0x000001b8   Data          36  startup.o(.text)
+    Num_sectors                              0x000001e8   Data           1  startup.o(.text)
+    Tickets                                  0x000001ec   Data          24  startup.o(.text)
+    Ticket_requests                          0x00000204   Data           4  startup.o(.text)
+    .ARM.__at_0x02FC                         0x000002fc   Section        4  startup.o(.ARM.__at_0x02FC)
+    my_data1                                 0x10000000   Section        4  startup.o(my_data1)
+    total_tickets                            0x10000000   Data           4  startup.o(my_data1)
+    my_data2                                 0x10000004   Section       96  startup.o(my_data2)
+    Sector_quantity_update                   0x10000034   Data           0  startup.o(my_data2)
+    STACK                                    0x10000068   Section      512  startup.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$STANDARDLIB$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __Vectors                                0x00000000   Data           4  startup.o(RESET)
+    Reset_Handler                            0x000000cd   Thumb Code   186  startup.o(.text)
+    NMI_Handler                              0x00000209   Thumb Code     2  startup.o(.text)
+    HardFault_Handler                        0x0000020b   Thumb Code     2  startup.o(.text)
+    MemManage_Handler                        0x0000020d   Thumb Code     2  startup.o(.text)
+    BusFault_Handler                         0x0000020f   Thumb Code     2  startup.o(.text)
+    UsageFault_Handler                       0x00000211   Thumb Code     2  startup.o(.text)
+    SVC_Handler                              0x00000213   Thumb Code     2  startup.o(.text)
+    DebugMon_Handler                         0x00000215   Thumb Code     2  startup.o(.text)
+    PendSV_Handler                           0x00000217   Thumb Code     2  startup.o(.text)
+    SysTick_Handler                          0x00000219   Thumb Code     2  startup.o(.text)
+    ADC_IRQHandler                           0x0000021b   Thumb Code     0  startup.o(.text)
+    BOD_IRQHandler                           0x0000021b   Thumb Code     0  startup.o(.text)
+    CANActivity_IRQHandler                   0x0000021b   Thumb Code     0  startup.o(.text)
+    CAN_IRQHandler                           0x0000021b   Thumb Code     0  startup.o(.text)
+    DMA_IRQHandler                           0x0000021b   Thumb Code     0  startup.o(.text)
+    EINT0_IRQHandler                         0x0000021b   Thumb Code     0  startup.o(.text)
+    EINT1_IRQHandler                         0x0000021b   Thumb Code     0  startup.o(.text)
+    EINT2_IRQHandler                         0x0000021b   Thumb Code     0  startup.o(.text)
+    EINT3_IRQHandler                         0x0000021b   Thumb Code     0  startup.o(.text)
+    ENET_IRQHandler                          0x0000021b   Thumb Code     0  startup.o(.text)
+    I2C0_IRQHandler                          0x0000021b   Thumb Code     0  startup.o(.text)
+    I2C1_IRQHandler                          0x0000021b   Thumb Code     0  startup.o(.text)
+    I2C2_IRQHandler                          0x0000021b   Thumb Code     0  startup.o(.text)
+    I2S_IRQHandler                           0x0000021b   Thumb Code     0  startup.o(.text)
+    MCPWM_IRQHandler                         0x0000021b   Thumb Code     0  startup.o(.text)
+    PLL0_IRQHandler                          0x0000021b   Thumb Code     0  startup.o(.text)
+    PLL1_IRQHandler                          0x0000021b   Thumb Code     0  startup.o(.text)
+    PWM1_IRQHandler                          0x0000021b   Thumb Code     0  startup.o(.text)
+    QEI_IRQHandler                           0x0000021b   Thumb Code     0  startup.o(.text)
+    RIT_IRQHandler                           0x0000021b   Thumb Code     0  startup.o(.text)
+    RTC_IRQHandler                           0x0000021b   Thumb Code     0  startup.o(.text)
+    SPI_IRQHandler                           0x0000021b   Thumb Code     0  startup.o(.text)
+    SSP0_IRQHandler                          0x0000021b   Thumb Code     0  startup.o(.text)
+    SSP1_IRQHandler                          0x0000021b   Thumb Code     0  startup.o(.text)
+    TIMER0_IRQHandler                        0x0000021b   Thumb Code     0  startup.o(.text)
+    TIMER1_IRQHandler                        0x0000021b   Thumb Code     0  startup.o(.text)
+    TIMER2_IRQHandler                        0x0000021b   Thumb Code     0  startup.o(.text)
+    TIMER3_IRQHandler                        0x0000021b   Thumb Code     0  startup.o(.text)
+    UART0_IRQHandler                         0x0000021b   Thumb Code     0  startup.o(.text)
+    UART1_IRQHandler                         0x0000021b   Thumb Code     0  startup.o(.text)
+    UART2_IRQHandler                         0x0000021b   Thumb Code     0  startup.o(.text)
+    UART3_IRQHandler                         0x0000021b   Thumb Code     0  startup.o(.text)
+    USBActivity_IRQHandler                   0x0000021b   Thumb Code     0  startup.o(.text)
+    USB_IRQHandler                           0x0000021b   Thumb Code     0  startup.o(.text)
+    WDT_IRQHandler                           0x0000021b   Thumb Code     0  startup.o(.text)
+    __initial_sp                             0x10000268   Data           0  startup.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x000000cd
+
+  Load Region LR_1 (Base: 0x00000000, Size: 0x00000364, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER_RO (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00000300, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x000000cc   Data   RO            3    RESET               startup.o
+    0x000000cc   0x000000cc   0x00000174   Code   RO            7  * .text               startup.o
+    0x00000240   0x00000240   0x000000bc   PAD
+    0x000002fc   0x000002fc   0x00000004   Code   RO            4    .ARM.__at_0x02FC    startup.o
+
+
+    Execution Region ER_RW (Exec base: 0x10000000, Load base: 0x00000300, Size: 0x00000064, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10000000   0x00000300   0x00000004   Data   RW            5    my_data1            startup.o
+    0x10000004   0x00000304   0x00000060   Data   RW            6    my_data2            startup.o
+
+
+    Execution Region ER_ZI (Exec base: 0x10000064, Load base: 0x00000364, Size: 0x00000204, Max: 0xffffffff, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x10000064   0x00000364   0x00000004   PAD
+    0x10000068        -       0x00000200   Zero   RW            1    STACK               startup.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       376        170        204        100        512       1136   startup.o
+
+    ----------------------------------------------------------------------
+       564        358        204        100        516       1136   Object Totals
+         0          0          0          0          0          0   (incl. Generated)
+       188        188          0          0          4          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+         0          0          0          0          0          0   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+       564        358        204        100        516       1136   Grand Totals
+       564        358        204        100        516       1136   ELF Image Totals
+       564        358        204        100          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                  768 (   0.75kB)
+    Total RW  Size (RW Data + ZI Data)               616 (   0.60kB)
+    Total ROM Size (Code + RO Data + RW Data)        868 (   0.85kB)
+
+==============================================================================
+
